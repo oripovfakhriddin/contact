@@ -177,9 +177,9 @@ export class HomePage extends Component {
     /* Alphabet Sorting */
     if (sortAlphabet !== "default") {
       if (sortAlphabet === "az") {
-        allContacts.sort((a, b)=> a.firstName > b.firstName ? 1 : -1)
+        allContacts = allContacts.sort((a, b)=> a.firstName.toLowerCase() > b.firstName.toLowerCase() ? 1 : -1)
       } else {
-        allContacts.sort((a, b)=> a.firstName < b.firstName ? 1 : -1)
+        allContacts = allContacts.sort((a, b)=> a.firstName.toLowerCase() < b.firstName.toLowerCase() ? 1 : -1)
       }
     }
 
