@@ -66,7 +66,7 @@ export class ContactForm extends Component {
               </Form.Select>
             </Form.Group>
             <Button type="submit" className="w-100">
-              {selected === null ? "Add" : "Save"} todo
+              {selected === null ? "Add" : "Save"} contact
             </Button>
           </Form>
           </Container>
